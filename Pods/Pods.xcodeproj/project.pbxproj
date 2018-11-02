@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		112CF04BE0F7B94B36B812C15F5CA1CF /* MediaKeyTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C26EE42A5EACC229945EA7C6B2645 /* MediaKeyTap.swift */; };
-		4539BE5AB75EF030E2917274A230DB31 /* NSEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF209D45620C16734F8377D36885C702 /* NSEventExtensions.swift */; };
-		54C0E0A4E035FE57A71C4A642F318823 /* MediaKeyTapInternals.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE11E4222062E629EEE82FFCBF5D6C3 /* MediaKeyTapInternals.swift */; };
-		5F44616BDF38100762371AC75B3DC42F /* MediaKeyTap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2981D746D4A7CA5A6E9683E0C9BE319 /* MediaKeyTap-dummy.m */; };
-		663FB0757CAAE48C8EE9AA7BD02E62D8 /* MediaApplicationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631632B85CE7AD0C0FD723979AF4F0EE /* MediaApplicationWatcher.swift */; };
+		17ACC74E53E9D3E88BBB9DD35BB871E0 /* MediaApplicationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631632B85CE7AD0C0FD723979AF4F0EE /* MediaApplicationWatcher.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		78B2718104963498607E2F9D4A3538F2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062BF815832FB00B10B2A93B74A3998F /* Extensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7C55B7FC1FBB1A4506E2034A69A0B597 /* MediaKeyTap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF7887E772E8320340402C5FCC8FEA2 /* MediaKeyTap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F5BB6CEF47C33C2107AB64D1014EAD1 /* MediaKeyTap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2981D746D4A7CA5A6E9683E0C9BE319 /* MediaKeyTap-dummy.m */; };
 		80B3B0CC1A8DCC7CADBFD09999773C4C /* Pods-YT Music-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FB0B7F2A751D76BB8268A59A68051EA /* Pods-YT Music-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80B523334967632F1B01627EF043C265 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E691107BAA50D8021F6A4D56004C20A /* Cocoa.framework */; };
-		AE5471BC6379B794C96243322FC7F54C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062BF815832FB00B10B2A93B74A3998F /* Extensions.swift */; };
+		A083ACF76B8A48398889418BC31A2D19 /* NSEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF209D45620C16734F8377D36885C702 /* NSEventExtensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C1AF8C768CFC56BC944E94D4B3EFB3B7 /* MediaKeyTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C26EE42A5EACC229945EA7C6B2645 /* MediaKeyTap.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C3928E3D076BD433E0FE948F347F6508 /* MediaKeyTapInternals.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE11E4222062E629EEE82FFCBF5D6C3 /* MediaKeyTapInternals.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CE4B89D61FF3E340A8B9C1D418054072 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970069E0D3B17147ACBDF09C09E3258E /* CoreGraphics.framework */; };
 		DD56ADCBFC8DFFF50C2D09E1AC572B7D /* Pods-YT Music-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E37AEDBC27D49A675E7A304E0BE1730C /* Pods-YT Music-dummy.m */; };
 		E864A6FA8C8BF0F826ECDD62BE171478 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E691107BAA50D8021F6A4D56004C20A /* Cocoa.framework */; };
@@ -206,7 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39A52375110804954308D4DD349E9583 /* Build configuration list for PBXNativeTarget "MediaKeyTap" */;
 			buildPhases = (
-				DBA09704B0BA5AAF722C3D025CD5A7EA /* Sources */,
+				012A121E91498A51D2E96CEC3992E0A3 /* Sources */,
 				D285E3B28F9B717737655EA5B2AF614E /* Frameworks */,
 				0D02E827045A7F36EE146E10A0B44598 /* Headers */,
 			);
@@ -265,24 +265,24 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		012A121E91498A51D2E96CEC3992E0A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78B2718104963498607E2F9D4A3538F2 /* Extensions.swift in Sources */,
+				17ACC74E53E9D3E88BBB9DD35BB871E0 /* MediaApplicationWatcher.swift in Sources */,
+				7F5BB6CEF47C33C2107AB64D1014EAD1 /* MediaKeyTap-dummy.m in Sources */,
+				C1AF8C768CFC56BC944E94D4B3EFB3B7 /* MediaKeyTap.swift in Sources */,
+				C3928E3D076BD433E0FE948F347F6508 /* MediaKeyTapInternals.swift in Sources */,
+				A083ACF76B8A48398889418BC31A2D19 /* NSEventExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A30E1C8CF7B8805031AC84AB68638032 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DD56ADCBFC8DFFF50C2D09E1AC572B7D /* Pods-YT Music-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DBA09704B0BA5AAF722C3D025CD5A7EA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AE5471BC6379B794C96243322FC7F54C /* Extensions.swift in Sources */,
-				663FB0757CAAE48C8EE9AA7BD02E62D8 /* MediaApplicationWatcher.swift in Sources */,
-				5F44616BDF38100762371AC75B3DC42F /* MediaKeyTap-dummy.m in Sources */,
-				112CF04BE0F7B94B36B812C15F5CA1CF /* MediaKeyTap.swift in Sources */,
-				54C0E0A4E035FE57A71C4A642F318823 /* MediaKeyTapInternals.swift in Sources */,
-				4539BE5AB75EF030E2917274A230DB31 /* NSEventExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +317,11 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MediaKeyTap/MediaKeyTap-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MediaKeyTap/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = "Target Support Files/MediaKeyTap/MediaKeyTap.modulemap";
 				PRODUCT_MODULE_NAME = MediaKeyTap;
@@ -351,7 +355,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Target Support Files/Pods-YT Music/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MODULEMAP_FILE = "Target Support Files/Pods-YT Music/Pods-YT Music.modulemap";
@@ -450,7 +458,11 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MediaKeyTap/MediaKeyTap-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MediaKeyTap/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = "Target Support Files/MediaKeyTap/MediaKeyTap.modulemap";
 				PRODUCT_MODULE_NAME = MediaKeyTap;
@@ -484,7 +496,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "Target Support Files/Pods-YT Music/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MODULEMAP_FILE = "Target Support Files/Pods-YT Music/Pods-YT Music.modulemap";
