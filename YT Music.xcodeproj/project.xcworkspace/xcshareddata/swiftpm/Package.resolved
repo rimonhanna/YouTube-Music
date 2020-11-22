@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MediaKeyTap",
+        "repositoryURL": "git@github.com:nhurden/MediaKeyTap.git",
+        "state": {
+          "branch": "master",
+          "revision": "e58df1911ef20af2b094c65a7855021d70f15dca",
+          "version": null
+        }
+      },
+      {
+        "package": "OpenCastSwift",
+        "repositoryURL": "https://github.com/SuperMarcus/OpenCastSwift",
+        "state": {
+          "branch": "spm",
+          "revision": "5fa97c29c22be3d31b9c8f769b3aa4d15d4b556b",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftProtobuf",
+        "repositoryURL": "https://github.com/apple/swift-protobuf",
+        "state": {
+          "branch": null,
+          "revision": "426bef0ddfdc6449b7bd1418baafad6bbc56110b",
+          "version": "1.13.0"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON",
+        "state": {
+          "branch": null,
+          "revision": "2b6054efa051565954e1d2b9da831680026cd768",
+          "version": "5.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

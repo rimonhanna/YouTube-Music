@@ -33,10 +33,6 @@ class StatusItemController: NSObject {
     statusItem.button?.image = NSImage(named: NSImage.Name("Cast"))
   }
   
-  func handleClick(_ event: NSEvent) {
-    
-  }
-  
   @objc func devicesChanged() {
     setMenus(devices: scanner.devices)
   }
@@ -89,19 +85,51 @@ extension StatusItemController: NSMenuDelegate {
 
 extension StatusItemController: CastClientDelegate {
   func castClient(_ client: CastClient, didConnectTo device: CastDevice) {
-//    client.requestStatus()
+    guard client.isConnected else { return }
+    client.launch(appId: CastAppIdentifier.youTube) { result in
+            switch result {
+            case .success(let app):
+                client.requestMediaStatus(for: app)
+
+            case .failure(let error):
+                print(error)
+            }
+
+    }
   }
+    
   
   func castClient(_ client: CastClient, deviceStatusDidChange status: CastStatus) {
     guard status.apps.count > 0, client.connectedApp == nil else { return }
 
     client.setMuted(false)
-    
+
     return client.join() { result in
       switch result {
       case .success(let app):
-        client.requestMediaStatus(for: app)
-        
+        let videoURL = URL(string: "https://www.youtube.com/watch?v=_f2NpgG7biw")!
+        let posterURL = URL(string: "https://i.imgur.com/GPgh0AN.jpg")!
+
+        // create a CastMedia object to hold media information
+        let media = CastMedia(title: "Test Bars",
+                                url: videoURL,
+                                poster: posterURL,
+                                contentType: "application/vnd.apple.mpegurl",
+                                streamType: CastMediaStreamType.buffered,
+                                autoplay: true,
+                                currentTime: 0)
+
+        // app is the instance of the app you got from the client after calling launch, or from the status callbacks
+        client.load(media: media, with: app) { result in
+                  switch result {
+                  case .success(let status):
+                    print(status)
+
+                  case .failure(let error):
+                    print(error)
+                  }
+            }
+
       case .failure(let error):
         print(error)
       }
@@ -109,11 +137,12 @@ extension StatusItemController: CastClientDelegate {
   }
   
   func castClient(_ client: CastClient, mediaStatusDidChange status: CastMediaStatus) {
-//    print(status.metadata)
+    print(status.metadata as Any)
 //    client.stopCurrentApp()
   }
   
   func castClient(_ client: CastClient, connectionTo device: CastDevice, didFailWith error: Error?) {
     print(error as Any)
+    client.disconnect()
   }
 }
