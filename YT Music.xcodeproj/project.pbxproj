@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< Updated upstream:YT Music.xcodeproj/project.pbxproj
+=======
+		246A24AE24B8C52900597B18 /* MediaKeyTap in Frameworks */ = {isa = PBXBuildFile; productRef = 246A24AD24B8C52900597B18 /* MediaKeyTap */; };
+		2482B206256A663B00E0E545 /* OpenCastSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2482B205256A663B00E0E545 /* OpenCastSwift */; };
+		2482B208256A665900E0E545 /* StatusItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2482B207256A665900E0E545 /* StatusItemController.swift */; };
+		2482B20A256A666700E0E545 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2482B209256A666700E0E545 /* MainMenu.xib */; };
+>>>>>>> Stashed changes:YTMusic.xcodeproj/project.pbxproj
 		2802617720EE629A001FDDCC /* ViewController + MediaKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2802617620EE629A001FDDCC /* ViewController + MediaKeys.swift */; };
 		2802617920EE71C6001FDDCC /* observer.js in Resources */ = {isa = PBXBuildFile; fileRef = 2802617820EE71C6001FDDCC /* observer.js */; };
 		2802617B20EE802B001FDDCC /* MediaCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2802617A20EE802B001FDDCC /* MediaCenter.swift */; };
@@ -39,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2482B207256A665900E0E545 /* StatusItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusItemController.swift; sourceTree = "<group>"; };
+		2482B209256A666700E0E545 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		2802617620EE629A001FDDCC /* ViewController + MediaKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + MediaKeys.swift"; sourceTree = "<group>"; };
 		2802617820EE71C6001FDDCC /* observer.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = observer.js; sourceTree = "<group>"; };
 		2802617A20EE802B001FDDCC /* MediaCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCenter.swift; sourceTree = "<group>"; };
@@ -69,7 +78,12 @@
 			files = (
 				2818F51420F54D27006CEBB4 /* MediaPlayer.framework in Frameworks */,
 				28BB690E20EA56F100BD3AD6 /* DevMateKit.framework in Frameworks */,
+<<<<<<< Updated upstream:YT Music.xcodeproj/project.pbxproj
 				DC8A73953AF08F2621981F7F /* Pods_YT_Music.framework in Frameworks */,
+=======
+				246A24AE24B8C52900597B18 /* MediaKeyTap in Frameworks */,
+				2482B206256A663B00E0E545 /* OpenCastSwift in Frameworks */,
+>>>>>>> Stashed changes:YTMusic.xcodeproj/project.pbxproj
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +93,7 @@
 		2802617420EE6260001FDDCC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2482B207256A665900E0E545 /* StatusItemController.swift */,
 				28DA92B720D90169004B2A6D /* ViewController.swift */,
 				2802617620EE629A001FDDCC /* ViewController + MediaKeys.swift */,
 				2802617A20EE802B001FDDCC /* MediaCenter.swift */,
@@ -135,6 +150,7 @@
 				2802617420EE6260001FDDCC /* Controllers */,
 				28DA92B520D90169004B2A6D /* AppDelegate.swift */,
 				28DA92BB20D9016A004B2A6D /* Main.storyboard */,
+				2482B209256A666700E0E545 /* MainMenu.xib */,
 				28DA92BE20D9016A004B2A6D /* Info.plist */,
 				28BB691120EA57FB00BD3AD6 /* Bridge.h */,
 			);
@@ -177,7 +193,15 @@
 			);
 			dependencies = (
 			);
+<<<<<<< Updated upstream:YT Music.xcodeproj/project.pbxproj
 			name = "YT Music";
+=======
+			name = YTMusic;
+			packageProductDependencies = (
+				246A24AD24B8C52900597B18 /* MediaKeyTap */,
+				2482B205256A663B00E0E545 /* OpenCastSwift */,
+			);
+>>>>>>> Stashed changes:YTMusic.xcodeproj/project.pbxproj
 			productName = "YT Music";
 			productReference = 28DA92B220D90169004B2A6D /* YT Music.app */;
 			productType = "com.apple.product-type.application";
@@ -189,7 +213,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
+<<<<<<< Updated upstream:YT Music.xcodeproj/project.pbxproj
 				LastUpgradeCheck = 1000;
+=======
+				LastUpgradeCheck = 1220;
+>>>>>>> Stashed changes:YTMusic.xcodeproj/project.pbxproj
 				ORGANIZATIONNAME = "Cocoon Development Ltd";
 				TargetAttributes = {
 					28DA92B120D90169004B2A6D = {
@@ -202,8 +230,13 @@
 					};
 				};
 			};
+<<<<<<< Updated upstream:YT Music.xcodeproj/project.pbxproj
 			buildConfigurationList = 28DA92AD20D90169004B2A6D /* Build configuration list for PBXProject "YT Music" */;
 			compatibilityVersion = "Xcode 9.3";
+=======
+			buildConfigurationList = 28DA92AD20D90169004B2A6D /* Build configuration list for PBXProject "YTMusic" */;
+			compatibilityVersion = "Xcode 11.0";
+>>>>>>> Stashed changes:YTMusic.xcodeproj/project.pbxproj
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -211,6 +244,13 @@
 				Base,
 			);
 			mainGroup = 28DA92A920D90169004B2A6D;
+<<<<<<< Updated upstream:YT Music.xcodeproj/project.pbxproj
+=======
+			packageReferences = (
+				246A24AC24B8C52900597B18 /* XCRemoteSwiftPackageReference "MediaKeyTap" */,
+				2482B204256A663B00E0E545 /* XCRemoteSwiftPackageReference "OpenCastSwift" */,
+			);
+>>>>>>> Stashed changes:YTMusic.xcodeproj/project.pbxproj
 			productRefGroup = 28DA92B320D90169004B2A6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -229,6 +269,7 @@
 				286AD73F20D9061400B2F45F /* custom.css in Resources */,
 				28DA92BA20D9016A004B2A6D /* Assets.xcassets in Resources */,
 				2802617920EE71C6001FDDCC /* observer.js in Resources */,
+				2482B20A256A666700E0E545 /* MainMenu.xib in Resources */,
 				28DA92BD20D9016A004B2A6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +324,7 @@
 				286AD74320D90E1B00B2F45F /* CustomWindow.swift in Sources */,
 				281F979920E9588A0033D930 /* WindowMovableView.swift in Sources */,
 				2802617B20EE802B001FDDCC /* MediaCenter.swift in Sources */,
+				2482B208256A665900E0E545 /* StatusItemController.swift in Sources */,
 				28DA92B820D90169004B2A6D /* ViewController.swift in Sources */,
 				28DA92B620D90169004B2A6D /* AppDelegate.swift in Sources */,
 				286AD74120D909AB00B2F45F /* CustomWebView.swift in Sources */,
@@ -329,6 +371,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -354,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -389,6 +432,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -408,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -436,8 +480,13 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+<<<<<<< Updated upstream:YT Music.xcodeproj/project.pbxproj
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.wearecocoon.YT-Music";
+=======
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = rimon.hanna.YTMusic;
+>>>>>>> Stashed changes:YTMusic.xcodeproj/project.pbxproj
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/YT Music/Bridge.h";
@@ -465,8 +514,13 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+<<<<<<< Updated upstream:YT Music.xcodeproj/project.pbxproj
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.wearecocoon.YT-Music";
+=======
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = rimon.hanna.YTMusic;
+>>>>>>> Stashed changes:YTMusic.xcodeproj/project.pbxproj
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/YT Music/Bridge.h";
@@ -496,6 +550,41 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+<<<<<<< Updated upstream:YT Music.xcodeproj/project.pbxproj
+=======
+
+/* Begin XCRemoteSwiftPackageReference section */
+		246A24AC24B8C52900597B18 /* XCRemoteSwiftPackageReference "MediaKeyTap" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:nhurden/MediaKeyTap.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		2482B204256A663B00E0E545 /* XCRemoteSwiftPackageReference "OpenCastSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SuperMarcus/OpenCastSwift";
+			requirement = {
+				branch = spm;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		246A24AD24B8C52900597B18 /* MediaKeyTap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 246A24AC24B8C52900597B18 /* XCRemoteSwiftPackageReference "MediaKeyTap" */;
+			productName = MediaKeyTap;
+		};
+		2482B205256A663B00E0E545 /* OpenCastSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2482B204256A663B00E0E545 /* XCRemoteSwiftPackageReference "OpenCastSwift" */;
+			productName = OpenCastSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+>>>>>>> Stashed changes:YTMusic.xcodeproj/project.pbxproj
 	};
 	rootObject = 28DA92AA20D90169004B2A6D /* Project object */;
 }

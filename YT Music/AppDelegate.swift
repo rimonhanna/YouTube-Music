@@ -7,9 +7,16 @@
 //
 
 import Cocoa
+import OpenCastSwift
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
+    let scanner = CastDeviceScanner()
+    var clients = [String: CastClient]()
+
+    @IBOutlet weak var window: NSWindow!
+
+    let menuBarController = StatusItemController()
     
     lazy var mainWindowController: NSWindowController? = {
         let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)

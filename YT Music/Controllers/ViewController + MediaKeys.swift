@@ -39,39 +39,46 @@ extension ViewController: MediaKeyTapDelegate {
         
         switch mediaKey {
         case .playPause:
-            playPause()
+            _ = playPause()
             break
         case .next, .fastForward:
-            nextTrack()
+            _ = nextTrack()
             break
         case.previous, .rewind:
-            previousTrack()
+            _ = previousTrack()
             break
         }
     }
     
-    @objc func playPause() {
+    @objc func playPause() -> MPRemoteCommandHandlerStatus {
         clickElement(selector: ".play-pause-button")
+        return .success
     }
     
-    @objc func pause() {
+    @objc func pause() -> MPRemoteCommandHandlerStatus {
         if (MediaCenter.default.isPlaying) {
             clickElement(selector: ".play-pause-button")
+            return .success
         }
+        return .commandFailed
     }
     
-    @objc func play() {
+    @objc func play() -> MPRemoteCommandHandlerStatus {
         if (!MediaCenter.default.isPlaying) {
             clickElement(selector: ".play-pause-button")
+            return .success
         }
+        return .commandFailed
     }
     
-    @objc func nextTrack() {
+    @objc func nextTrack() -> MPRemoteCommandHandlerStatus {
         clickElement(selector: ".next-button")
+        return .success
     }
     
-    @objc func previousTrack() {
+    @objc func previousTrack() -> MPRemoteCommandHandlerStatus {
         clickElement(selector: ".previous-button")
+        return .success
     }
     
     @objc func likeTrack() {
@@ -99,10 +106,10 @@ extension ViewController: MediaKeyTapDelegate {
         }
     }
     
-    @available(OSX 10.12.2, *)
-    @objc func seek(_ notification: Any) {
-        guard let event = notification as? MPChangePlaybackPositionCommandEvent else { return }
+    @objc func seek(_ notification: Any) -> MPRemoteCommandHandlerStatus {
+        guard let event = notification as? MPChangePlaybackPositionCommandEvent else { return .commandFailed }
         seek(to: event.positionTime)
+        return .success
     }
     
     func seek(to: TimeInterval) {
